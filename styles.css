@@ -31,6 +31,19 @@ header{
     position: relative;
 }
 
+a:hover,
+a:focus{
+    color: #00FFFF;
+    transition-duration: 1s;
+}
+
+i:hover,
+i:focus{
+    color: #00FFFF;
+    transition-duration: 1s;
+    transform: scale(2)
+}
+
 .topNav{
     padding: 20px;
     position: absolute;
