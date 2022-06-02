@@ -37,8 +37,8 @@ a:focus{
     transition-duration: 1s;
 }
 
-i:hover,
-i:focus{
+.skills i:hover,
+.skills i:focus{
     color: #00FFFF;
     transition-duration: 1s;
     transform: scale(2)
@@ -103,27 +103,34 @@ h1{
     flex-direction: column;
     justify-content: center;
     padding: 2%;
-    width: 45%;
+    /* width: 45%; */
 }
 
 .aboutText h2,
+.aboutText h3,
 .aboutText h4,
 .aboutText p{
     font-family: 'Fredoka', sans-serif;}
 
-.aboutText h2{
-    font-size: 30px;
-    margin-bottom: 20px;
+.aboutText p{
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .aboutText h3{
+    font-size: 36px;
     margin-bottom: 30px;
+    font-weight: normal;
 }
 
 .aboutText h4{
     color: grey;
     letter-spacing: 0px;
     margin-bottom: 20px;
+}
+
+.marginTop{
+    margin-top: 20px;
 }
 
 
@@ -175,22 +182,24 @@ h1{
 }
 
 .projects img{
-    width: 45%;
+    width: 35%;
     margin-right: 5%;
 }
 
 .projects ul{
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projects ul li{
     list-style: none;
     background-color: white;
     color: black;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin: 0 5px;
+    margin-bottom: 13px;
 }
 
 .projects p{
@@ -201,7 +210,13 @@ h1{
 .project1, .project2, .project3{
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    background-color: #1c242d;
+    padding: 50px;
+}
+
+.project1Text > *, .project2Text > *, .project3Text > *{
+    background-color: #1c242d;
 }
 
 
@@ -211,6 +226,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    background-color: #1c242d;
 }
 
 .links a{
@@ -340,6 +356,7 @@ button{
 
     .topNav ul li{
         padding: 15px;
+        text-align: center;
     }
 
     .project1, .project2, .project3{
